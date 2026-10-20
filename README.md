@@ -58,3 +58,26 @@ Styling and motion are in `assets/styles.css` and `assets/script.js`. Both are d
 ## Github
 
 To connect: push the project files to `https://github.com/Madmonk2523/IthacaHome` after authorizing a GitHub connection. The repository was empty when this site was created. Do not force-push if it gains content in the meantime.
+
+
+## Signature edition: flyer + existing website
+
+The signature visual system is layered in `assets/editorial.css` and `assets/editorial.js`. It uses the owner's IthacaHome flyer for the historic roofline identity, deep burgundy / navy / cream / brass palette, and actual Plaza East / SummerHill photography. The existing `ithacahome.com` pages supplied the leasing FAQs, neighborhood details, resident story excerpts, the links to 3D tours, and the definitions of the different floor-plan types. The site avoids claiming live availability or current prices.
+
+Source-material references for owner verification before publication:
+- https://www.ithacahome.com/ (community descriptions, neighborhood, reviews)
+- https://www.ithacahome.com/faq-s (rental FAQs and pet policies)
+- https://www.ithacahome.com/copy-of-summerhill-townhouses (Plaza East)
+- https://www.ithacahome.com/copy-2-of-plaza-east-luxury-townhou (SummerHill)
+- https://www.apartments.com/plaza-east-summerhill-townhouses-ithaca-ny/przvhlr/ (virtual tours, published third-party information)
+
+For a **full source regeneration**, run:
+
+```bash
+python3 -m pip install beautifulsoup4
+python3 build.py
+python3 enhance.py
+python3 refine.py
+```
+
+The generated static pages are already included in the repository, so there is no build step for Vercel. The redevelopment includes cinematic photo treatments, architectural type, responsive layouts, scroll reveals, interactive residence comparisons, floor-plan filtering, virtual-tour links, resident stories, an accessible FAQ, and a validated tour-request form. The Resend environment variables described above are still required for form delivery. Avoid placing any API secrets in this public repository.

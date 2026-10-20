@@ -53,15 +53,15 @@
   // An architecturally-inspired property switcher.
   const properties = {
     plaza: {
-      image:'/assets/plaza-east-exterior.webp',alt:'Plaza East exterior and residences',
+      image:'/assets/plaza-street.webp',alt:'Plaza East exterior and residences',
       label:'PLAZA EAST / ITHACA, NY',no:'01',eyebrow:'THE SIGNATURE COLLECTION',
-      title:'Plaza <em>East.</em>',description:'Open, light-filled apartments and townhouses designed with space to live your way. Thoughtful finishes, private bedrooms, and everyday ease.',
+      title:'Plaza <em>East.</em>',description:'Spacious apartments and townhouses with high ceilings, fireplaces, private decks, air conditioning, free parking, and private bathrooms in each bedroom.',
       bedrooms:'02 — 04',feature:'PRIVATE',featureLabel:'EN-SUITE BATHROOMS',link:'/plaza-east.html',linkText:'Discover Plaza East'
     },
     summer: {
-      image:'/assets/summerhill-residences.webp',alt:'SummerHill townhouse exterior',
+      image:'/assets/summerhill-street.webp',alt:'SummerHill townhouse exterior',
       label:'SUMMERHILL / ITHACA, NY',no:'02',eyebrow:'THE TOWNHOUSE COLLECTION',
-      title:'Summer<em>Hill.</em>',description:'Newly refreshed interiors, generous two-level layouts, and all the ingredients for feeling at home — from private decks to in-unit laundry.',
+      title:'Summer<em>Hill.</em>',description:'Newly remodeled two-level townhouses with updated kitchen cabinets and floors, gas fireplaces, ceiling fans, private decks, and in-unit laundry.',
       bedrooms:'02 — 03',feature:'UPDATED',featureLabel:'INTERIORS',link:'/summerhill.html',linkText:'Discover SummerHill'
     }
   };
@@ -178,11 +178,13 @@
     if(target==='plaza')propertyChoice.value='Plaza East';
     if(target==='summer')propertyChoice.value='SummerHill';
     if(target==='either')propertyChoice.value='Either';
-    propertyChoice.addEventListener('change',()=>{
+    const syncBedroomOptions=()=>{
       const four=$('option[value="4"]',bedsChoice);
       if(four){four.disabled=propertyChoice.value==='SummerHill';if(four.disabled&&bedsChoice.value==='4')bedsChoice.value='';}
-    });
-    propertyChoice.dispatchEvent(new Event('change'));
+    };
+    propertyChoice.addEventListener('change',syncBedroomOptions);
+    propertyChoice.addEventListener('input',syncBedroomOptions);
+    syncBedroomOptions();
   }
   if(bedsChoice && ['2','3','4'].includes(search.get('beds')) && !(propertyChoice?.value === 'SummerHill' && search.get('beds') === '4')) bedsChoice.value=search.get('beds');
   form?.addEventListener('submit',async ev=>{
