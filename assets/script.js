@@ -53,13 +53,13 @@
   // An architecturally-inspired property switcher.
   const properties = {
     plaza: {
-      image:'/assets/plaza-east-exterior.jpg',alt:'Plaza East exterior and residences',
+      image:'/assets/plaza-east-exterior.webp',alt:'Plaza East exterior and residences',
       label:'PLAZA EAST / ITHACA, NY',no:'01',eyebrow:'THE SIGNATURE COLLECTION',
       title:'Plaza <em>East.</em>',description:'Open, light-filled apartments and townhouses designed with space to live your way. Thoughtful finishes, private bedrooms, and everyday ease.',
       bedrooms:'02 — 04',feature:'PRIVATE',featureLabel:'EN-SUITE BATHROOMS',link:'/plaza-east.html',linkText:'Discover Plaza East'
     },
     summer: {
-      image:'/assets/summerhill-residences.jpg',alt:'SummerHill townhouse exterior',
+      image:'/assets/summerhill-residences.webp',alt:'SummerHill townhouse exterior',
       label:'SUMMERHILL / ITHACA, NY',no:'02',eyebrow:'THE TOWNHOUSE COLLECTION',
       title:'Summer<em>Hill.</em>',description:'Newly refreshed interiors, generous two-level layouts, and all the ingredients for feeling at home — from private decks to in-unit laundry.',
       bedrooms:'02 — 03',feature:'UPDATED',featureLabel:'INTERIORS',link:'/summerhill.html',linkText:'Discover SummerHill'
@@ -111,13 +111,13 @@
 
   // Bedroom/property configurator: actual types, not misleading real-time vacancy claims.
   const configurations = [
-    {p:'plaza',title:'2-bedroom apartment',beds:2,baths:'2 baths',kind:'APARTMENT'},
-    {p:'plaza',title:'2-bedroom townhouse',beds:2,baths:'2.5 baths',kind:'TOWNHOUSE'},
-    {p:'plaza',title:'3-bedroom apartment',beds:3,baths:'3 baths',kind:'APARTMENT'},
-    {p:'plaza',title:'3-bedroom townhouse',beds:3,baths:'3.5 baths',kind:'TOWNHOUSE'},
+    {p:'plaza',title:'2-bedroom apartment',beds:2,baths:'Ask for floor plan',kind:'APARTMENT'},
+    {p:'plaza',title:'2-bedroom townhouse',beds:2,baths:'Ask for floor plan',kind:'TOWNHOUSE'},
+    {p:'plaza',title:'3-bedroom apartment',beds:3,baths:'Ask for floor plan',kind:'APARTMENT'},
+    {p:'plaza',title:'3-bedroom townhouse',beds:3,baths:'Ask for floor plan',kind:'TOWNHOUSE'},
     {p:'plaza',title:'4-bedroom residence',beds:4,baths:'Contact for layout',kind:'RESIDENCE'},
-    {p:'summer',title:'2-bedroom townhouse',beds:2,baths:'1.5 or 2.5 baths',kind:'TOWNHOUSE'},
-    {p:'summer',title:'3-bedroom townhouse',beds:3,baths:'2.5 or 3.5 baths',kind:'TOWNHOUSE'}
+    {p:'summer',title:'2-bedroom townhouse',beds:2,baths:'Ask for floor plan',kind:'TOWNHOUSE'},
+    {p:'summer',title:'3-bedroom townhouse',beds:3,baths:'Ask for floor plan',kind:'TOWNHOUSE'}
   ];
   let fitProperty='all',fitBeds='all';
   const fitResults=$('#fit-results');
@@ -184,7 +184,7 @@
     });
     propertyChoice.dispatchEvent(new Event('change'));
   }
-  if(bedsChoice && ['2','3','4'].includes(search.get('beds'))) bedsChoice.value=search.get('beds');
+  if(bedsChoice && ['2','3','4'].includes(search.get('beds')) && !(propertyChoice?.value === 'SummerHill' && search.get('beds') === '4')) bedsChoice.value=search.get('beds');
   form?.addEventListener('submit',async ev=>{
     ev.preventDefault();
     if(!form.reportValidity())return;
