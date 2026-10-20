@@ -81,3 +81,9 @@ python3 refine.py
 ```
 
 The generated static pages are already included in the repository, so there is no build step for Vercel. The redevelopment includes cinematic photo treatments, architectural type, responsive layouts, scroll reveals, interactive residence comparisons, floor-plan filtering, virtual-tour links, resident stories, an accessible FAQ, and a validated tour-request form. The Resend environment variables described above are still required for form delivery. Avoid placing any API secrets in this public repository.
+
+## Refined design (October 2026)
+
+The latest version uses the full **ITHACA HOME** wordmark only (no IH initials), with a streamlined desktop/mobile navigation: Properties, Neighborhood, FAQ, Schedule a Tour. It removes all decorative latitude/longitude labels, badge/seal clutter, and polaroid treatments. The homepage features a clean photographic hero and direct leasing actions. The additional `assets/refinement.css` and `assets/refinement.js` layers implement responsive styling, restrained motion, parallax, and navigation highlighting, including reduced-motion support. All six public pages use these enhancements.
+
+The site remains a static, multi-page front-end with a Vercel serverless inquiry endpoint. A Resend API key and verified sender domain are still necessary for production email delivery. Unit availability and prices are **not** represented as real-time data; confirm those with the owner prior to advertising availability.
