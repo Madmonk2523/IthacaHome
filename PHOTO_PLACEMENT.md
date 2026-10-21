@@ -19,7 +19,7 @@
 
 ## Plaza East — architecture, then rooms
 
-`assets/property-gallery/plaza-01.webp`: full-width exterior hero from the owner's older gallery. `assets/plaza-kitchen.webp`: its own featured **bedroom / closets** editorial section (the filename is misleading). `assets/property-gallery/plaza-02.webp` through `plaza-12.webp`: a separate 11-image detailed gallery with no repetition. Archived photos are credited to the owner's preexisting gallery; descriptions are conservative because exact apartment and finish details differ.
+`assets/property-gallery/plaza-01.webp`: full-width exterior hero from the owner's older gallery. `assets/plaza-kitchen.webp`: its own featured **bedroom / closets** editorial section (the filename is misleading). `assets/property-gallery/plaza-02.webp`, `plaza-03.webp`, and `plaza-06.webp` through `plaza-12.webp`: nine distinct gallery photos; archived `plaza-04.webp` and `plaza-05.webp` are intentionally omitted as visual near-duplicates of homepage photographs. Archived photos are credited to the owner's preexisting gallery; descriptions are conservative because exact apartment and finish details differ.
 
 ## SummerHill — townhouse identity, then living space
 
@@ -35,7 +35,7 @@ The extracted marketing-flyer JPEGs (`flyer-extract-65.jpg` through `flyer-extra
 
 ## Verification scope
 
-- All **35** rendered photo paths are unique sitewide. No URL is reused.
+- All **33** rendered photo paths are unique sitewide. No URL is reused.
 - All **13** visually reviewed, active local property photographs are different shots; a perceptual difference-hash check finds no near-duplicates in that subset.
-- GitHub has **22** archived gallery assets with **22 distinct Git blob hashes**. Their original-source mapping is documented in `scripts/wix_photo_sources.json`. Distinct hashes do *not* prove distinct scenes, so owner review of the deployed galleries remains the final check against visually similar alternate crops.
+- GitHub has **22** archived gallery assets with **22 distinct Git blob hashes**; **20** are selected for the published pages. Two have been excluded after the full-repository pixel audit matched them to other used photographs. Their original-source mapping is documented in `scripts/wix_photo_sources.json`. Distinct hashes alone do *not* prove different scenes, so the full-checkout image difference-hash audit is also enforced in GitHub Actions; owner review remains the final visual sign-off.
 - No active website images use Wix or Apartments.com URLs. Only third-party tours/maps/fonts are externally linked.

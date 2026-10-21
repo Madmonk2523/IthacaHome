@@ -73,6 +73,22 @@ for filename,items in STORY.items():
         benefits.insert_before(gallery.extract())
     if filename in ("plaza-east.html","summerhill.html"):
         is_plaza=filename.startswith("plaza")
+        # Full-checkout perceptual photo audit: these two archived files are
+        # near duplicates of the homepage kitchen and living-room photographs.
+        # Keep the clearer local photographs on Home, not both variants.
+        if is_plaza:
+            for b in list(soup.select('.detail-photo-grid .gallery-photo')):
+                im=b.find('img')
+                if im and im.get('src') in {
+                  '/assets/property-gallery/plaza-04.webp',
+                  '/assets/property-gallery/plaza-05.webp',
+                }:
+                    b.decompose()
+            # Continuous gallery counter after deliberately omitted duplicates.
+            kept=soup.select('.detail-photo-grid .gallery-photo')
+            for i,b in enumerate(kept,1):
+                label=b.select_one('.gallery-label')
+                if label:label.string=f'PLAZA EAST / {i:02d}'
         photo="/assets/plaza-kitchen.webp" if is_plaza else "/assets/summerhill-bedroom.webp"
         alt="Bright Plaza East bedroom with white closets and carpet" if is_plaza else "SummerHill open-plan living room with freestanding gas fireplace"
         eyebrow="PLAZA EAST / A BEDROOM" if is_plaza else "SUMMERHILL / THE LIVING SPACE"
