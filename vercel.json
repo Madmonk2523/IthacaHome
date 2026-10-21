@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/copy-of-summerhill-townhouses",
+      "destination": "/plaza-east.html",
+      "permanent": true
+    },
+    {
+      "source": "/copy-of-plaza-east-luxury-apartment",
+      "destination": "/plaza-east.html",
+      "permanent": true
+    },
+    {
+      "source": "/copy-2-of-plaza-east-luxury-townhou",
+      "destination": "/summerhill.html",
+      "permanent": true
+    }
+  ]
+}

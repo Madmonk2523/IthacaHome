@@ -1,0 +1,22 @@
+name: Photography integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  image-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install photo audit dependencies
+        run: pip install --disable-pip-version-check pillow numpy
+      - name: Verify photos exist and are visually distinct
+        run: python scripts/photo_audit_v7.py --strict
+      - name: Verify JavaScript syntax
+        run: |
+          node --check assets/site-v7.js
+          node --check api/inquiry.js
