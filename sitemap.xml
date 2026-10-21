@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://www.ithacahome.com/</loc></url><url><loc>https://www.ithacahome.com/plaza-east.html</loc></url><url><loc>https://www.ithacahome.com/summerhill.html</loc></url><url><loc>https://www.ithacahome.com/neighborhood.html</loc></url><url><loc>https://www.ithacahome.com/contact.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.ithacahome.com/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ithacahome.com/plaza-east.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ithacahome.com/summerhill.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ithacahome.com/neighborhood.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ithacahome.com/contact.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.ithacahome.com/privacy.html</loc><changefreq>monthly</changefreq></url>
+</urlset>
