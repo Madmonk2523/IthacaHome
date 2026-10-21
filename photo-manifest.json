@@ -1,177 +1,138 @@
 [
   {
     "page": "index.html",
-    "src": "/assets/plaza-street.webp",
-    "alt": "Plaza East apartment buildings with landscaped lawns on East Hill"
+    "src": "/assets/residences-autumn.webp"
   },
   {
     "page": "index.html",
-    "src": "/assets/plaza-east-exterior.webp",
-    "alt": "Plaza East apartments, white buildings framed by green trees"
+    "src": "/assets/plaza-east-exterior.webp"
   },
   {
     "page": "index.html",
-    "src": "/assets/summerhill-street.webp",
-    "alt": "SummerHill townhouse buildings and parking area in Ithaca"
+    "src": "/assets/summerhill-street.webp"
   },
   {
     "page": "index.html",
-    "src": "/assets/plaza-bedroom.webp",
-    "alt": "Plaza East kitchen with warm wood cabinetry and white appliances"
+    "src": "/assets/plaza-bedroom.webp"
   },
   {
     "page": "index.html",
-    "src": "/assets/summerhill-kitchen.webp",
-    "alt": "SummerHill townhouse kitchen with white cabinets and a sunlit window"
+    "src": "/assets/summerhill-kitchen.webp"
   },
   {
-    "page": "index.html",
-    "src": "/assets/residences-autumn.webp",
-    "alt": "Tree-lined entry and white siding at the IthacaHome residences"
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-01.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/plaza-living.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/plaza-kitchen.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-02.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-03.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-04.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-05.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-06.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-07.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-08.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-09.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-10.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-11.webp"
+  },
+  {
+    "page": "plaza-east.html",
+    "src": "/assets/property-gallery/plaza-12.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-01.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/summerhill-bedroom.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/summerhill-living.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-02.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-03.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-04.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-05.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-06.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-07.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-08.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-09.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/property-gallery/summerhill-10.webp"
+  },
+  {
+    "page": "summerhill.html",
+    "src": "/assets/summerhill-residences.webp"
   },
   {
     "page": "neighborhood.html",
-    "src": "/assets/lakeside-walk.webp",
-    "alt": "Boardwalk through green open space near Ithaca residential neighborhood"
+    "src": "/assets/lakeside-walk.webp"
   },
   {
     "page": "neighborhood.html",
-    "src": "/assets/summerhill-sign.webp",
-    "alt": "SummerHill Townhouses entry sign and lawn"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-01.webp",
-    "alt": "Plaza East townhouse and apartment community in Ithaca, New York"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/plaza-living.webp",
-    "alt": "Plaza East living room with fireplace and doors opening to a private deck"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/plaza-kitchen.webp",
-    "alt": "Plaza East bedroom with white doors, large closet and carpet"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-02.webp",
-    "alt": "Plaza East residence photograph 2"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-03.webp",
-    "alt": "Plaza East residence photograph 3"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-04.webp",
-    "alt": "Plaza East residence photograph 4"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-05.webp",
-    "alt": "Plaza East residence photograph 5"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-06.webp",
-    "alt": "Plaza East residence photograph 6"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-07.webp",
-    "alt": "Plaza East residence photograph 7"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-08.webp",
-    "alt": "Plaza East residence photograph 8"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-09.webp",
-    "alt": "Plaza East residence photograph 9"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-10.webp",
-    "alt": "Plaza East residence photograph 10"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-11.webp",
-    "alt": "Plaza East residence photograph 11"
-  },
-  {
-    "page": "plaza-east.html",
-    "src": "/assets/property-gallery/plaza-12.webp",
-    "alt": "Plaza East residence photograph 12"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-01.webp",
-    "alt": "SummerHill townhouse and apartment community in Ithaca, New York"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/summerhill-bedroom.webp",
-    "alt": "SummerHill townhouse open-plan living room with ceiling fan and sliding doors"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/summerhill-living.webp",
-    "alt": "SummerHill bedroom with new flooring and open closets"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-02.webp",
-    "alt": "SummerHill residence photograph 2"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-03.webp",
-    "alt": "SummerHill residence photograph 3"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-04.webp",
-    "alt": "SummerHill residence photograph 4"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-05.webp",
-    "alt": "SummerHill residence photograph 5"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-06.webp",
-    "alt": "SummerHill residence photograph 6"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-07.webp",
-    "alt": "SummerHill residence photograph 7"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-08.webp",
-    "alt": "SummerHill residence photograph 8"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-09.webp",
-    "alt": "SummerHill residence photograph 9"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/property-gallery/summerhill-10.webp",
-    "alt": "SummerHill residence photograph 10"
-  },
-  {
-    "page": "summerhill.html",
-    "src": "/assets/summerhill-residences.webp",
-    "alt": "Row of SummerHill townhouses with garden beds and landscaping"
+    "src": "/assets/summerhill-sign.webp"
   }
 ]

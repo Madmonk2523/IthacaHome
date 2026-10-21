@@ -49,3 +49,137 @@
 .faq-section{background:var(--ivory)}.faq-grid{display:grid;grid-template-columns:.72fr 1.18fr;gap:11%}.faq-grid h2{font:400 clamp(62px,5.9vw,90px)/.95 var(--display);margin-top:22px}.faq-grid h2 em{color:var(--red)}.faq-grid>div:first-child>p{font-size:14px;color:#68766e;max-width:360px;margin-top:21px}.faq-list{border-top:1px solid var(--line)}.faq-list details{border-bottom:1px solid var(--line);padding:22px 0}.faq-list summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:500;gap:20px;cursor:pointer}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:'';width:10px;height:10px;flex:none;border-right:1.5px solid var(--red);border-bottom:1.5px solid var(--red);transform:rotate(45deg);margin-right:7px;transition:transform .3s}.faq-list details[open] summary:after{transform:rotate(225deg)}.faq-list details p{font-size:13px;color:#68736c;max-width:540px;padding:15px 24px 2px 0}.faq-list details a{text-decoration:underline}.tour-link-note{font-size:13px;margin-top:20px;color:#53625b}.tour-link-note a{font-weight:700;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:4px}
 @media(max-width:700px){.faq-grid{grid-template-columns:1fr;gap:29px}.faq-grid h2{font-size:64px}.faq-list details{padding:20px 0}.faq-list summary{font-size:15px}.tour-link-note{line-height:1.6}}
 .arrival-photo{background:var(--cream);padding:58px 0}.arrival-layout{display:grid;grid-template-columns:1fr .95fr;gap:55px;align-items:center}.arrival-layout p{font:400 37px/1.2 var(--display);max-width:500px;margin-top:17px}.arrival-layout figure{height:300px;overflow:hidden}.arrival-layout img{height:100%;width:100%;object-fit:cover}@media(max-width:700px){.arrival-photo{padding:44px 0}.arrival-layout{display:block}.arrival-layout p{font-size:30px}.arrival-layout figure{height:235px;margin-top:22px}}
+
+
+/* IthacaHome editorial refinement: original property photography, consistent rhythm, no blank-content dependency. */
+:root{--ivory:#f8f6f1;--night:#142a2a;--red:#8b2532;--ease:cubic-bezier(.22,1,.36,1)}
+:focus-visible{outline:2px solid #a34b45;outline-offset:4px}
+html{scroll-padding-top:90px}
+.hero-refined{grid-template-columns:minmax(0,43%) minmax(0,57%);background:#f6f3ee;min-height:clamp(650px,78svh,840px)}
+.hero-refined .hero-copy{color:#152e2c;background:#f6f3ee;padding:58px 5vw 44px max(54px,calc((100vw - 1344px)/2));gap:30px}
+.hero-refined .hero-index{color:#55685f;letter-spacing:.10em}
+.hero-refined .hero-copy-main{padding:12px 0 5px}
+.hero-refined .hero-overline{color:#8b2532;font-size:11px;letter-spacing:.125em}
+.hero-refined .hero-headline{font-size:clamp(77px,7.4vw,124px);line-height:.94;letter-spacing:-.052em;color:#152e2c;margin-top:22px}
+.hero-refined .hero-headline em{color:#8b2532}
+.hero-refined .hero-lead{max-width:445px;font-size:16px;line-height:1.75;color:#4d6059;margin-top:25px}
+.hero-refined .hero-buttons{gap:22px;margin-top:31px;flex-wrap:wrap}
+.hero-refined .button-paper{background:#8b2532;color:#fff;border-color:#8b2532}
+.hero-refined .button-paper:hover{background:#6b1e2b;border-color:#6b1e2b}
+.hero-refined .quiet-link.light{color:#1a3330;border-color:#1a3330}
+.hero-refined .hero-bottom{color:#67776f;font-size:9px;letter-spacing:.10em}
+.hero-refined .hero-bottom span+span:before{background:#9aaba0}
+.hero-refined .hero-picture{min-height:600px;background:#abb49e}
+.hero-refined .hero-picture>img{object-position:54% 50%;filter:saturate(1.03) contrast(1.025);transform:scale(1.035);animation:hero-drift 17s ease-in-out infinite alternate}
+.hero-refined .hero-picture:before{background:linear-gradient(0deg,rgba(12,30,25,.53),transparent 40%)}
+.hero-refined .hero-picture-tag{font-size:10px;bottom:29px;left:29px;right:29px;letter-spacing:.11em}
+@keyframes hero-drift{0%{transform:scale(1.03) translate3d(0,0,0)}100%{transform:scale(1.10) translate3d(-.7%,.5%,0)}}
+.section{padding-block:88px}
+.intro-strip-inner{grid-template-columns:185px 1fr;gap:42px;padding-block:30px}
+.intro-strip-inner p{max-width:810px;font-size:clamp(22px,2.2vw,32px)}
+.section-heading{margin-bottom:35px}
+.section-heading h2{font-size:clamp(52px,5.7vw,83px)}
+.community-layout{gap:22px}
+.community-summer{margin-top:28px}
+.community-media{height:clamp(300px,35vw,495px)}
+.community-card .community-label{min-height:0;padding:20px 22px 26px}
+.community-label h3{font-size:clamp(41px,4vw,56px)}
+.overview{padding-block:72px}
+.overview-header h2{font-size:clamp(52px,5vw,77px)}
+.interior-panel:nth-child(2){margin-top:35px}
+.interior-media{height:clamp(315px,36vw,500px)}
+.location-tease-refined{display:grid;grid-template-columns:38% 62%;min-height:360px;background:#18312f;color:#f8f4eb}
+.location-tease-refined .location-band{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px;padding:45px clamp(35px,6vw,120px);background:#8b2532}
+.location-band span{font-size:11px;letter-spacing:.12em;font-weight:600;color:#fff4ea}
+.location-band strong{font-family:var(--display);font-size:clamp(83px,8.5vw,145px);font-weight:400;line-height:.9;letter-spacing:-.06em;color:#fff}
+.location-tease-refined .location-tease-copy{padding:60px clamp(30px,5.5vw,110px);background:transparent;min-height:0}
+.location-tease-refined .location-tease-copy h2{font-size:clamp(46px,5.2vw,78px);line-height:1}
+.location-tease-refined .location-tease-copy h2 em{color:#e8b4a5}
+.location-tease-refined .location-tease-copy p{color:#dfebe4;max-width:560px}
+.location-tease-refined .location-tease-copy .quiet-link{color:#fff}
+.location-tease-refined .location-facts{padding-top:29px;color:#dce2db}
+.faq-section .faq-grid h2{font-size:clamp(52px,5.4vw,79px)}
+.testimonial{padding-block:77px}
+.bottom-call{padding-block:56px}
+.footer{padding-top:57px}.footer-top{padding-bottom:40px}
+.detail-title h1{letter-spacing:-.055em}.detail-title{padding-bottom:43px}
+.property-intro{padding-block:75px}.property-images{padding-bottom:70px}
+.double-media figure:nth-child(2){margin-top:22px}
+.gallery-grid{gap:11px}.gallery-item{border-radius:2px}
+.gallery-item-index{background:rgba(251,248,240,.95)}
+.has-js .reveal{opacity:1;transform:none}
+.reveal.visible{animation:section-entrance .78s var(--ease) both}
+@keyframes section-entrance{from{opacity:.75;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.nav-desktop a{transition:color .2s}
+.nav-desktop a:hover,.nav-desktop a[aria-current="page"]{color:#8b2532}
+.community-card:hover .community-media img,.interior-panel:hover img{transform:scale(1.045)}
+@media(max-width:950px){
+.hero-refined{grid-template-columns:1fr;display:flex;flex-direction:column;min-height:0}
+.hero-refined .hero-picture{order:-1;height:clamp(320px,48vw,470px);min-height:0}
+.hero-refined .hero-copy{padding:38px 6vw 43px;min-height:0;gap:22px}
+.hero-refined .hero-copy-main{padding:0}
+.hero-refined .hero-headline{font-size:clamp(70px,10vw,99px);margin-top:12px}
+.hero-refined .hero-lead{margin-top:18px}
+.hero-refined .hero-bottom{margin-top:12px}
+.location-tease-refined{grid-template-columns:35% 65%}
+.location-tease-refined .location-band{padding-inline:26px}
+.location-band strong{font-size:clamp(63px,8vw,96px)}
+}
+@media(max-width:700px){
+.header{height:69px}.header.is-condensed{height:62px}
+.header-inner{width:calc(100% - 32px);gap:10px}
+.wordmark{font-size:18px;letter-spacing:-.055em}.wordmark-roof{display:none}
+.nav-action{font-size:11px;padding:10px 12px;white-space:nowrap}
+.hero-refined .hero-picture{height:clamp(280px,74vw,390px)}
+.hero-refined .hero-picture>img{object-position:54% 48%;animation:hero-drift-mobile 18s ease-in-out infinite alternate}
+@keyframes hero-drift-mobile{from{transform:scale(1.02)}to{transform:scale(1.08)}}
+.hero-refined .hero-picture-tag{left:17px;right:17px;bottom:15px;font-size:8px}
+.hero-refined .hero-copy{padding:31px 23px 35px;gap:18px}
+.hero-refined .hero-index{font-size:9px}
+.hero-refined .hero-overline{font-size:9px}
+.hero-refined .hero-headline{font-size:clamp(60px,14.2vw,86px);line-height:.98;max-width:500px}
+.hero-refined .hero-lead{font-size:14px;line-height:1.65;max-width:460px}
+.hero-refined .hero-buttons{gap:15px;margin-top:24px}
+.hero-refined .button-paper{padding:13px 16px;min-height:46px}
+.hero-refined .hero-bottom{font-size:9px;flex-wrap:wrap;row-gap:7px}
+.intro-strip-inner{display:block;padding-block:28px}
+.intro-strip-inner p{font-size:23px;line-height:1.3;margin-top:10px}
+.section{padding-block:58px}
+.section-heading h2,.section-heading.smaller h2{font-size:clamp(50px,11vw,69px)}
+.section-heading>p{margin-top:13px}
+.community-layout{gap:16px}
+.community-media{height:clamp(250px,70vw,385px)}
+.community-label h3{font-size:43px}
+.overview{padding-block:60px}
+.overview-header h2{font-size:54px}
+.interior-panel:nth-child(2){margin-top:28px}
+.interior-media{height:310px}
+.location-tease-refined{display:flex;flex-direction:column;min-height:0}
+.location-tease-refined .location-band{padding:32px 25px;gap:11px}
+.location-band strong{font-size:85px}
+.location-tease-refined .location-tease-copy{padding:40px 25px 48px}
+.location-tease-refined .location-tease-copy h2{font-size:58px}
+.location-tease-refined .location-facts{padding-top:24px}
+.testimonial{padding-block:52px}.quote-content blockquote{font-size:clamp(30px,8vw,42px)}
+.faq-section .faq-grid h2{font-size:59px}
+.bottom-call{padding-block:47px}
+.detail-title h1{font-size:clamp(70px,15.2vw,100px);line-height:.96}
+.detail-title{padding-bottom:30px}
+.detail-hero-photo{height:clamp(300px,75vw,440px);min-height:0}
+.property-intro{padding-block:60px}.property-intro h2{font-size:58px}
+.double-media figure:nth-child(2){margin-top:0}
+.gallery-grid{gap:8px}
+.neighborhood-hero h1{font-size:clamp(59px,12vw,78px)}
+.contact-heading h1{font-size:clamp(67px,14vw,90px)}
+.footer{padding-top:46px}
+}
+@media(max-width:390px){
+.hero-refined .hero-headline{font-size:58px}
+.hero-refined .hero-picture{height:288px}
+.hero-refined .hero-copy{padding:28px 18px 32px}
+.hero-refined .hero-buttons .button{font-size:11px}
+.hero-refined .hero-bottom{font-size:8px}
+.location-tease-refined .location-tease-copy h2{font-size:50px}
+.detail-title h1{font-size:68px}
+}
+@media(prefers-reduced-motion:reduce){.hero-refined .hero-photo{animation:none!important;transform:none!important}.reveal.visible{animation:none!important}}
