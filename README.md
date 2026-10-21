@@ -107,8 +107,25 @@ The old site / Apartments.com links are used as content and 3D-tour references, 
 - Gallery imagery from original IthacaHome Wix CDN; local owner-supplied photos on home/location. See `IMAGE_SOURCES.md` for source URLs and approval notes.
 
 
-## Wix retirement: safe photo and DNS migration
+## Shutdown-safe image migration (October 2026)
 
-All 22 former Wix property gallery images have been archived in this GitHub repository under `assets/property-gallery/`. The production HTML and the generator load these local paths, not Wix image URLs. Keep the image files in GitHub and all deployments. Confirm the owner's image usage rights.
+The 22 images previously hotlinked from the legacy Wix site have been archived as
+`assets/property-gallery/plaza-01.webp` through `plaza-12.webp` and
+`summerhill-01.webp` through `summerhill-10.webp` in the GitHub repository.
+**No production HTML photo source should refer to Wix.** The importer remains as
+an audit trail, not an essential runtime dependency. Keep these photo files in
+GitHub and in every deployment. Confirm the property owner's rights to use them.
 
-Do not cancel the old website until the new Vercel deployment, 35 photo placements, web-domain DNS records, old-page redirects, and an end-to-end inquiry email have been tested. Preserve domain registration and email MX/SPF/DKIM/DMARC records. See `DNS_MIGRATION.md`.
+Before decommissioning Wix: deploy to Vercel, test every gallery and the form,
+point the `ithacahome.com` DNS records at Vercel, and preserve the domain
+registration and email MX/SPF/DKIM records. Do not cancel mail or domain service.
+Legacy page URLs redirect through `vercel.json`.
+
+
+## V7 — Deliberate photography / no reuse (2026-10-21)
+
+**`build_v7.py` is the current generator.** Run `python3 build_v7.py` to regenerate the six public pages and V7 CSS/JS. It generates `photo-manifest.json` and `IMAGE_SOURCES.md`, and applies a controlled, sitewide assignment of every photograph. Previous generators are retained as historical source and should not be used for production.
+
+Each image gets exactly **one placement anywhere in the website**. The home page establishes location and compares communities; property detail pages each add a verified interior photo and a separate archived-gallery sequence; the Location page features a distinct outdoor view. Visually duplicated client flyer extracts are excluded. The legacy Wix image URLs are not used by the website.
+
+See `PHOTO_PLACEMENT.md`, `photo-manifest.json`, `QA-v7.md`, and `scripts/photo_audit_v7.py`. All 22 property-gallery WebP images are already versioned in GitHub under `assets/property-gallery`; do not delete that directory.
