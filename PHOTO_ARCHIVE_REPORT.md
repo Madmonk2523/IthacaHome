@@ -1,1 +1,0 @@
-# Image archival report\n\nArchived 22 of 22 Wix images.\n\n\n
