@@ -41,3 +41,7 @@ Static website for Plaza East Apartments & Townhouses and SummerHill Townhouses,
 - Import connected GitHub repository into Vercel (static preset / no build command), or use its existing GitHub-connected Vercel project.
 - Keep the original domain and email DNS untouched until the preview, form, and owner review pass.
 - Confirm old Wix URLs redirect properly and `robots.txt` / `sitemap.xml` resolve after domain change.
+
+
+## Design refinement V11
+The homepage opens with `/assets/residences-autumn.webp` (an owner-provided courtyard photo), moved from the homepage neighborhood preview. No image is used twice across the six-page site. Desktop and phone layouts have been rebalanced in the single `/assets/site.css` stylesheet. Review `DESIGN-AUDIT.md` and `photo-manifest.json`.
