@@ -2,7 +2,7 @@
 
 Local property photos were supplied directly by the client in this conversation or extracted from the client-supplied marketing flyer.
 
-Additional gallery images are hotlinked to the owner’s existing ithacahome.com Wix CDN, as specifically requested. They should ideally be downloaded from the business owner and hosted locally before the public domain is switched. Asset URLs and labels below are references to the original property galleries; owner should verify and approve each image/label.
+The additional owner-site gallery images have now all been downloaded and committed to GitHub as optimized WebP photos under `assets/property-gallery/`. URLs below are historical origin records only; there are **no external Wix photo requests** in the production pages. Confirm the owner's image usage rights. Asset URLs and labels below are references to the original property galleries; owner should verify and approve each image/label.
 
 - `plaza_ext` — https://static.wixstatic.com/media/2f6185_cd315b25485044c18e941701754ddd00~mv2.jpg
 - `plaza_gallery1` — https://static.wixstatic.com/media/2f6185_288d55dfb8134f74ac454047c3e327f9~mv2.jpg

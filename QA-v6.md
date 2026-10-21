@@ -20,3 +20,10 @@
 ## Source attribution
 - Client-supplied images and marketing flyer; separate original-gallery photos from the owner's current IthacaHome.com pages, each documented in IMAGE_SOURCES.md.
 - The extra photos are hotlinked from the original site rather than copied from Apartments.com.
+
+
+## Cutover-readiness update
+- All 22 historic Wix gallery images were archived in GitHub and production HTML references local copies.
+- No duplicated image URLs in any production page; 35 unique image placements overall.
+- Old Wix page paths have Vercel redirects in `vercel.json`.
+- Production Vercel form email and DNS cutover still require operator testing before shutting down Wix.
