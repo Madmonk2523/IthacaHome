@@ -8,7 +8,7 @@ Unique photo placement is enforced at **site level** rather than only per page.
 2. `plaza-east-exterior.webp`: Plaza East property card.
 3. `summerhill-street.webp`: SummerHill property card.
 4. `plaza-bedroom.webp`: Plaza East kitchen in the interior comparison (legacy filename is misleading).
-5. `summerhill-kitchen.webp`: SummerHill kitchen in the interior comparison.
+5. `summerhill-kitchen.webp`: SummerHill kitchen in the "A closer look" tiles.
 
 ## Plaza East (14)
 
@@ -34,4 +34,4 @@ Unique photo placement is enforced at **site level** rather than only per page.
 - `ithacahome-logo.webp` is not used as a photograph because the user requested a clean full wordmark rather than the cropped older mark.
 - Remaining older duplicates and generated previews are kept only in source history and are not referenced in V9 HTML.
 
-There are 34 active image placements across the six pages, and every source path is unique. `plaza-street.webp` and `summerhill-residences.webp` remain available locally but are not currently assigned to a page. Gallery image bytes are retained in `assets/property-gallery/`; preserve that directory during deployment.
+There are 34 active image placements across the six pages, and every source path is unique. `plaza-street.webp` is used only as social-preview metadata and is not placed as a page photo. Gallery image bytes are retained in `assets/property-gallery/`; preserve that directory during deployment.

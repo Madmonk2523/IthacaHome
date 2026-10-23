@@ -13,10 +13,12 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install photo audit dependencies
-        run: pip install --disable-pip-version-check pillow numpy
+        run: pip install --disable-pip-version-check pillow numpy beautifulsoup4
       - name: Verify photos exist and are visually distinct
         run: python scripts/photo_audit_v7.py --strict
       - name: Verify JavaScript syntax
         run: |
-          node --check assets/site-v7.js
+          node --check assets/site.js
           node --check api/inquiry.js
+      - name: Validate pages
+        run: python build.py

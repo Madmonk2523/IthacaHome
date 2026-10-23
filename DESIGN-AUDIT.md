@@ -37,3 +37,9 @@
 - Live production email deliverability must be tested with verified Resend sender credentials.
 - Automated browser navigation is blocked in the local sandbox; local screenshot construction is an approximate proof of layout.
 - Independently inspect real mobile devices and the protected Vercel deployment before turning off Wix.
+
+## V14 - full visual redesign
+
+- New layer assets/v14.css loaded after site.css on all pages: full-bleed homepage hero with glass facts card, highlights ticker, editorial property cards, dark amenity band, two-tile photo section, immersive property-page heroes with a floating facts card.
+- Removed obsolete V6-V10 stylesheets, scripts, generators and QA reports; only site.css, v14.css and site.js are loaded.
+- CI now syntax-checks assets/site.js and runs build.py.

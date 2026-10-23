@@ -12,7 +12,7 @@ Static website for Plaza East Apartments & Townhouses and SummerHill Townhouses,
 
 ## Design & accessibility
 - Custom responsive CSS in `assets/site.css`; behavior in `assets/site.js`
-- V12 editorial visual system: forest-green, warm-stone and terracotta palette; image-led home and property pages; responsive navigation and mobile menu
+- V14 visual system (`assets/v14.css`, layered over `assets/site.css`): full-bleed hero, ticker, forest-green, warm-stone and terracotta palette; image-led home and property pages; responsive navigation and mobile menu
 - Complete Home, property, Neighborhood and Contact links in the desktop/mobile navigation; every page is also linked from the footer directory
 - Homepage FAQ includes details checked against the former IthacaHome FAQ and supplied rental sheet; historical prices are not shown as current rates
 - Motion respects `prefers-reduced-motion`; progressive enhancement keeps content visible when JavaScript does not load
@@ -40,7 +40,7 @@ Static website for Plaza East Apartments & Townhouses and SummerHill Townhouses,
 
 ## Development
 - Serve from repo root with `python -m http.server 8000` for static pages; the API route requires Vercel to actually send emails.
-- `python qa_v10.py` audits links, source paths, SEO tags and photo uniqueness.
+- `python build.py` validates all six pages, stylesheet/script links and photo uniqueness.
 - `node --check assets/site.js` validates JavaScript syntax.
 - `python build.py` regenerates the six HTML pages, sitemap, Vercel redirects and favicon from the reviewed content.
 
