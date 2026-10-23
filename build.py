@@ -13,7 +13,7 @@ for name in pages:
     text=(root/name).read_text(encoding='utf-8')
     soup=BeautifulSoup(text,'html.parser')
     assert soup.select_one('main') and soup.select_one('h1'), f'{name}: missing main/h1'
-    for asset in ['/assets/site.css','/assets/site.js']:
+    for asset in ['/assets/site.css','/assets/v14.css','/assets/site.js']:
         assert asset in text and (root/asset.lstrip('/')).is_file(), f'{name}: missing {asset}'
     for image in soup.select('main img[src]'):
         src=image['src']; seen[src]+=1
