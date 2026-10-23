@@ -12,11 +12,18 @@ Static website for Plaza East Apartments & Townhouses and SummerHill Townhouses,
 
 ## Design & accessibility
 - Custom responsive CSS in `assets/site.css`; behavior in `assets/site.js`
-- Cinematic hero, masked-title animation, staged image reveals, restrained parallax, scroll reveal, and responsive photo gallery viewer
-- Motion respects `prefers-reduced-motion`
+- V12 editorial visual system: forest-green, warm-stone and terracotta palette; image-led home and property pages; responsive navigation and mobile menu
+- Complete Home, property, Neighborhood and Contact links in the desktop/mobile navigation; every page is also linked from the footer directory
+- Homepage FAQ includes details checked against the former IthacaHome FAQ and supplied rental sheet; historical prices are not shown as current rates
+- Motion respects `prefers-reduced-motion`; progressive enhancement keeps content visible when JavaScript does not load
+- Responsive property galleries, floor-plan filters, inquiry form and keyboard-operable navigation
 - No emoji icons, no monogram, no geographic coordinate decorations
-- Content stays visible when JavaScript does not load (progressive enhancement)
-- Photo assignments are unique across the six pages (35 placements, 35 distinct asset paths)
+- Photo assignments are unique across the six pages (34 placements, 34 distinct asset paths)
+
+## Location information
+- East Hill Plaza and the TCAT stop are about a three-minute walk away; Cornell is about a 15-minute walk or three-minute drive.
+- TCAT Routes 82 and 51 serve the East Hill Plaza stop. Link to current schedules is on the neighborhood page.
+- Distance and route details originate from the current IthacaHome website and should be reconfirmed before launch.
 
 ## Photography / important preservation instruction
 - 13 photos are in `/assets/*.webp` in this local build and in the repository.

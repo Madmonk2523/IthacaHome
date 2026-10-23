@@ -1,4 +1,21 @@
-# IthacaHome / Visual and functional audit (V11)
+# IthacaHome / Visual and functional audit (V13)
+
+## V13 navigation and content
+
+- Desktop navigation now exposes Home, Plaza East, SummerHill, Neighborhood, and Contact directly on every page, alongside the tour action.
+- Mobile navigation includes every page, a visible privacy link, active-page state, Escape-to-close, focus handling, and resize cleanup.
+- Added an Explore page directory to every footer so visitors can move between the complete site without returning to the home page.
+- Checked the former IthacaHome FAQ (`/faq-s`) and updated the pet answer with its three-pet limit, breed restrictions, and published additional-pet fees; fees are clearly identified as subject to change.
+- Used the supplied 2025–26 rental sheet for historical utility, parking, and pet details. Old rent prices are intentionally not presented as current quotes.
+
+## V12 visual refresh
+
+- Reworked the shared visual system across the homepage, property, neighborhood, and contact pages with a forest-green, warm-stone, and terracotta palette.
+- Rebalanced the homepage into a responsive editorial composition: full-bleed lead photography, offset property cards, a high-contrast amenities band, and clearer location and inquiry calls to action.
+- Simplified the shared navigation and added a readable, keyboard-dismissable mobile menu presentation at tablet and phone widths.
+- Kept the existing local photo assignments unique; no image source is intentionally reused across pages.
+- Updated location copy from the live IthacaHome website: East Hill Plaza and its TCAT stop are about a three-minute walk away; Cornell is about a 15-minute walk or three-minute drive; Routes 82 and 51 are cited with a link to the TCAT schedule.
+- Rechecked the six-page static audit and JavaScript syntax after the redesign.
 
 ## Problems found and addressed
 

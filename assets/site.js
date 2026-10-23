@@ -5,9 +5,11 @@ const header=$('#header'),progress=$('.reading-progress');
 const scrollTick=()=>{const y=window.scrollY;header?.classList.toggle('is-condensed',y>48);if(progress){const total=document.documentElement.scrollHeight-window.innerHeight;progress.style.transform=`scaleX(${total?Math.min(1,y/total):0})`}};
 window.addEventListener('scroll',scrollTick,{passive:true});scrollTick();
 const toggle=$('#nav-toggle'),mobile=$('#nav-mobile');
-const setMenu=(open)=>{toggle?.setAttribute('aria-expanded',String(open));toggle?.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobile?.classList.toggle('is-open',open);mobile?.toggleAttribute('inert',!open);document.body.classList.toggle('locked',open)};
+const setMenu=(open)=>{toggle?.setAttribute('aria-expanded',String(open));toggle?.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobile?.classList.toggle('is-open',open);mobile?.toggleAttribute('inert',!open);document.body.classList.toggle('locked',open);if(!open)toggle?.focus()};
 toggle?.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));
 $$('#nav-mobile a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('click',e=>{if(toggle?.getAttribute('aria-expanded')==='true'&&!header?.contains(e.target))setMenu(false)});
+window.addEventListener('resize',()=>{if(window.innerWidth>900&&toggle?.getAttribute('aria-expanded')==='true')setMenu(false)},{passive:true});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle?.getAttribute('aria-expanded')==='true')setMenu(false)});
 if('IntersectionObserver' in window&&!reduce){const ob=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');ob.unobserve(entry.target)}}),{threshold:.09,rootMargin:'0px 0px -25px 0px'});$$('.reveal').forEach(el=>ob.observe(el))}else{$$('.reveal').forEach(el=>el.classList.add('visible'))}
 // Just a small amount of parallax on the large hero image. No motion on touch devices.
