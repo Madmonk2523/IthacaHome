@@ -21,6 +21,7 @@ h2 em,h1 em{font-style:italic;color:var(--x-clay)}
 .header{height:76px;background:rgba(246,241,231,.82);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);border-bottom:1px solid var(--x-line);transition:background .4s,height .4s var(--x-ease),box-shadow .4s}
 .header.is-condensed{height:64px;box-shadow:0 14px 40px -24px rgba(13,33,29,.5)}
 .header-inner{width:min(100% - var(--x-pad)*2,var(--x-max));max-width:none;margin-inline:auto;padding:0;display:flex;align-items:center;gap:28px;height:100%}
+.wordmark-roof{display:none!important}
 .wordmark{display:flex;align-items:center;gap:10px;font:700 .95rem/1 var(--font);letter-spacing:.2em;color:var(--x-ink);margin-right:auto}
 .wordmark-home{color:var(--x-clay);font-weight:700}
 .nav-desktop{display:flex;gap:4px;align-items:center}
