@@ -18,7 +18,7 @@ Static website for Plaza East Apartments & Townhouses and SummerHill Townhouses,
 - Motion respects `prefers-reduced-motion`; progressive enhancement keeps content visible when JavaScript does not load
 - Responsive property galleries, floor-plan filters, inquiry form and keyboard-operable navigation
 - No emoji icons, no monogram, no geographic coordinate decorations
-- Photo assignments are unique across the six pages (34 placements, 34 distinct asset paths)
+- Photo assignments are unique across the six pages (32 placements, 32 distinct asset paths)
 
 ## Location information
 - East Hill Plaza and the TCAT stop are about a three-minute walk away; Cornell is about a 15-minute walk or three-minute drive.
